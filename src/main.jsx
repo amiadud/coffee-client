@@ -22,12 +22,12 @@ const router = createBrowserRouter ([
       {
         path: '/',
         element: <Home></Home>,
-        loader: ()=> fetch(`http://localhost:5000/products`)
+        loader: ()=> fetch(`https://coffee-server-navy.vercel.app/products`)
       },
       {
         path:'/products',
         element:<Products></Products>,
-        loader: ()=> fetch(`http://localhost:5000/products`)
+        loader: ()=> fetch(`https://coffee-server-navy.vercel.app/products`)
       }
     ]
   },
@@ -38,12 +38,12 @@ const router = createBrowserRouter ([
       {
         path:'/update-products/:id',
         element:<ProductUpdate></ProductUpdate>,
-        loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({params})=> fetch(`https://coffee-server-navy.vercel.app/products/${params.id}`)
       },
       {
         path:'/products-details/:id',
         element:<ProductDetails></ProductDetails>,
-        loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({params})=> fetch(`https://coffee-server-navy.vercel.app/products/${params.id}`)
       },
       {
         path:'/register',
@@ -56,7 +56,7 @@ const router = createBrowserRouter ([
       {
         path:'/users',
         element:<Users></Users>,
-        loader: ()=> fetch(`http://localhost:5000/users`)
+        loader: ()=> fetch(`https://coffee-server-navy.vercel.app/users`)
       }
 ])
 
