@@ -15,7 +15,7 @@ const Products = () => {
        
  const handleDelete = _id => {
     console.log("id",_id);
-    fetch(`http://localhost:5000/products/${_id}`, {
+    fetch(`https://coffee-server-navy.vercel.app/products/${_id}`, {
         method: 'DELETE'
     })
     .then(res => res.json())

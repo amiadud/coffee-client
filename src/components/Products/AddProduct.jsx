@@ -25,7 +25,7 @@ const AddProduct = () => {
         console.log(CoffeData);
 
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://coffee-server-navy.vercel.app/products', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'

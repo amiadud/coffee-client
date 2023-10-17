@@ -23,7 +23,7 @@ const Register = () => {
             const createdAt = result.user.metadata.creationTime
             //new user has been created
             const user = {name, email, createdAt }
-            fetch('http://localhost:5000/users', {
+            fetch('https://coffee-server-navy.vercel.app/users', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
